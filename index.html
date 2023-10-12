@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"/>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">My Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">My Portfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile.png" alt="Profile Picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I am</p>
+        <h1 class="title">Arsenio A. Cervera</h1>
+        <p class="section__text__p2">
+          Currently studying at Technological University of the Philippines.
+          Third year level, taking the course of Information Technology.
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn_btn-color-2"
+            onclick="window.open('./assets/CV.pdf'  )"
+          >
+            Curriculum Vitae
+          </button>
+          <button class="btn_btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+         </nav>
+      <div class="social-media">
+        <a href="#"
+          ><i
+            class="bx bxl-facebook-circle"
+            onclick="window.open('https://www.facebook.com/cervera115')"
+          ></i
+        ></a>
+        <a href="#"
+          ><i
+            class="bx bxl-instagram-alt"
+            onclick="window.open('https://www.instagram.com/sen_paiii_/')"
+          ></i
+        ></a>
+        <a href="#"
+          ><i
+            class="bx bxl-github"
+            onclick="window.open('https://github.com/Cervera-jpg')"
+          ></i
+        ></a>
+      </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="about-text">
+      <h1 class="title">About Me</h1>
+      </div>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/bg.jpg" alt="Profile Picture" class="about-pic"/>
+        </div>
+        <div class="about-details-container">
+          <div class="about-container">
+            <div  class="text-container">
+              <h1>Web Designer & Developer</h1>
+              <p>I am a web designer and front-end developer with a passion for creating beautiful and functional websites. Currently taking a Bachelor of Science in Information Technology from Technological University of the Philippines, where I learned the fundamentals of web development and design. I have experience in using HTML, CSS and JavaScript to build responsive and user-friendly web pages. I also enjoy learning new technologies and exploring new design trends. You can check out some of my projects below.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <p class="setion__text__p1">My Skills</p>
+      <div class="skills-area">
+        <div class="skill">
+          <div class="skill-title">HTML</div>
+          <div class="skill-bar"></div>
+          <div class="html skill-fill">
+            <span class="skill-percent">50%</span>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-title">CSS</div>
+          <div class="skill-bar"></div>
+          <div class="css skill-fill">
+            <span class="skill-percent">40%</span>
+          </div>
+        </div><div class="skill">
+          <div class="skill-title">JavaScript</div>
+          <div class="skill-bar"></div>
+          <div class="js skill-fill">
+            <span class="skill-percent">40%</span>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-title">C</div>
+          <div class="skill-bar"></div>
+          <div class="c skill-fill">
+            <span class="skill-percent">50%</span>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-title">Java</div>
+          <div class="skill-bar"></div>
+          <div class="java skill-fill">
+            <span class="skill-percent">60%</span>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-title">Python</div>
+          <div class="skill-bar"></div>
+          <div class="python skill-fill">
+            <span class="skill-percent">50%</span>
+          </div>
+        </div>
+      </div>
+          </div>
+        </div>
+      </div>
+     
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Check My Recent Projects</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-container">
+          <div class="details-container color-container">
+            <div class="articler-container">
+              <img src="./assets/Picture1.png" alt="Project 1" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Alternate</h2>
+            <div class="btn-container">
+              <button
+                  class="btn_btn-color-3"
+                onclick="location.href='https://www.figma.com/file/UFTlFjlvYE6bMzsliQsiH7/Alternate?type=design&mode=design&t=XT0nkyApJTkLBXLB-0'"
+              >
+                Figma
+              </button>
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="articler-container">
+              <img src="./assets/Picture5.png" alt="Project 2" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Mobile Bank</h2>
+            <div class="btn-container">
+              <button
+                  class="btn_btn-color-3"
+                onclick="location.href='https://www.figma.com/file/UFTlFjlvYE6bMzsliQsiH7/Alternate?type=design&node-id=8-11&mode=design&t=XT0nkyApJTkLBXLB-0'"
+              >
+                Figma
+              </button>
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="articler-container">
+              <img src="./assets/Picture3.png" alt="Project 3" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Mobile Application Prototype</h2>
+            <div class="btn-container">
+              <button
+                  class="btn_btn-color-3"
+                onclick="location.href='https://www.figma.com/file/UFTlFjlvYE6bMzsliQsiH7/Alternate?type=design&mode=design&t=XT0nkyApJTkLBXLB-0'"
+              >
+                Figma
+              </button>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Let's get in touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contat-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="email-icon"/>
+          <p><a href="mailto:examplemail@gmail.com">cerveraarsenio115@gmail.com</a></p>
+        </div>
+        <div class="contat-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/github.png" alt="Github icon" class="git_icon"/>
+          <p><a href="https://github.com/Cervera-jpg">Cervera-jpg</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Arsenio Cervera. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
